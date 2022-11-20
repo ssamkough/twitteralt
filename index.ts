@@ -2,8 +2,11 @@ import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 
 const router = new Router();
 router
-  .get("/", (context) => {
-    context.response.body = "Hello world!";
+  .get("/", async (context) => {
+    await context.send({
+      root: `${Deno.cwd()}/`,
+      index: "public/src/index.html",
+    });
   })
   .post("/tweet", (context) => {
     context.response.body = "tweet test";
