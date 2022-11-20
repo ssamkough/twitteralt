@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+form > textarea {
+  flex: 1;
+  resize: none;
+}
+
+#tweets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

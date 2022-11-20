@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>twitteralt</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="alternative to twitter" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script type="module" src="components/tweet-box.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">twitteralt</a></li>
+          <li><a href="./profile.html">profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form action="http://localhost:8000/tweet" method="post">
+          <textarea
+            id="tweet-body"
+            name="tweet-body"
+            maxlength="280"
+            cols="12"
+            required
+          ></textarea>
+          <button type="submit">tweet</button>
+        </form>
+      </section>
+      <hr />
+      <section id="tweets">
+        <tweet-box author="sammy">this is a test</tweet-box>
+      </section>
+    </main>
+    <footer>twitteralt</footer>
+  </body>
+</html>

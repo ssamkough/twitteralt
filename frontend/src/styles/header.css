@@ -1,0 +1,13 @@
+header {
+  border: 2px solid purple;
+}
+
+header ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  list-style-type: none;
+}
